@@ -18,5 +18,5 @@ app.get('*', function (req, res) {
   res.send(JSON.stringify(dateStamp));
 });
 
-app.listen(8080, function () {
+app.listen(process.env.PORT || 8080, function () {
 });
